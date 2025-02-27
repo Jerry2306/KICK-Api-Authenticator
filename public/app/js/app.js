@@ -39,6 +39,7 @@ async function doTokenAuth() {
 }
 
 function setErrorMessage(errorMessage) {
+    console.error(errorMessage);
     var errorMessageSpan = document.getElementById("error-message");
     if (errorMessageSpan == null) return;
     errorMessageSpan.innerHTML = errorMessage;
