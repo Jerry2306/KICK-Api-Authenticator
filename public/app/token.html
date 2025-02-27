@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="js/app.js"></script>
+
+    <style>
+        #app-container {
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            display: flex;
+        }
+    </style>
+
+    <title>Kick-API Auth Parameter</title>
+</head>
+
+<body>
+    <div id="app-container">
+        <h2>Deine Kick-API Authentication Parameter:</h2>
+
+        <span id="token-infos" style="max-width: 69%;">Der Token wird abgerufen...</span>
+
+        <span id="error-message" style="color: rgb(236, 74, 74)" />
+    </div>
+
+    <script>
+        doTokenAuth();
+    </script>
+</body>
+
+</html>

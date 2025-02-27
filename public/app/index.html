@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="js/app.js"></script>
+
+    <style>
+        #app-container {
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            display: flex;
+        }
+    </style>
+
+    <title>Kick-API Authentication Test</title>
+</head>
+
+<body>
+    <div id="app-container">
+        <h2>Melde dich mit KICK an, um einen Token für die API zu erhalten.</h2>
+        <button onclick="doKickIdAuth()">Anmelden</button>
+
+        <span id="error-message" style="color: rgb(236, 74, 74)"/>
+    </div>
+</body>
+
+</html>
